@@ -1,13 +1,13 @@
 from abc import ABC, abstractmethod
 
 class Parser(ABC):
+    def __init__(self, file_worker):
+        self.file_worker = file_worker
+
     @abstractmethod
     def load_vacancies(self, keyword):
         pass
 
-class BaseClass:
-    def __init__(self, arg):
-        self.arg = arg
 
 #
 # class search_vacation(Parser):
